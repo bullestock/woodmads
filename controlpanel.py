@@ -6,7 +6,9 @@ outer_w = lid_w + 5
 outer_l = lid_l + 5
 lid_th = 3.2
 outer_h = 50
+# Shell thickness
 th = 5
+# Flow indicator dimensions
 fi_w1 = 39
 fi_w2 = 50
 fi_h = 40
@@ -67,12 +69,12 @@ res = (cq.Workplane("XY")
        .workplaneFromTagged("bot")
        .transformed(offset=(0, -outer_l/2 + fi_h/2 + th, outer_h))
        .rect(fi_w1, fi_h)
-       .cutBlind(-fi_th)     
+       .cutBlind(-(fi_th + lid_th))
        # Hole for flow indicator couplers
        .workplaneFromTagged("bot")
        .transformed(offset=(0, -fi_hose_y_offset, outer_h))
        .rect(fi_w2, fi_coupler_w)
-       .cutBlind(-fi_th)
+       .cutBlind(-(fi_th + lid_th))
 )
 
 show_object(res)
