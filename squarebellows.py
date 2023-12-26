@@ -1,7 +1,8 @@
 import cadquery as cq
 
 wall_th = 1
-w1 = 20
+#w1 = 20
+w1 = 22.5
 w2 = w1 + 4 * wall_th
 w3 = w1 + 2 * wall_th
 w4 = w1 - 2*wall_th
