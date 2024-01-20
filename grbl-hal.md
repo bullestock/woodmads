@@ -21,6 +21,8 @@ $3: Step direction invert as axismask
 
 Inverts the direction signals (active low).
 
+*** 2 (invert Y)
+
 $4: Invert stepper enable pin(s) as axismask
 
 Inverts the stepper driver enable signals. Most drivers uses active low enable requiring inversion.
@@ -48,7 +50,7 @@ $9: PWM Spindle as bitfield where setting bit 0 enables the rest:
 Enable controls PWM output availability.
 When `RPM controls spindle enable signal` is checked and M3 or M4 is active S0 switches it off and S > 0 switches it on.
 
-*** Neeeded
+*** Needed
 
 $10: Status report options as bitfield:
     0 - Position in machine coordinate (1)
@@ -90,7 +92,7 @@ $14: Invert control pins as bitfield:
 Inverts the control signals (active low).
 NOTE: Block delete, Optional stop, EStop and Probe connected are optional signals, availability is driver dependent.
 
-*** Feed hold, cycle start, e-stop not connected
+*** 7
 
 $15: Invert coolant pins as bitfield:
     0 - Flood (1)
@@ -101,7 +103,9 @@ Inverts the coolant and mist signals (active low).
 $16: Invert spindle signals as bitfield:
     0 - Spindle enable (1)
     1 - Spindle direction (2)
-    2 - PWM (4), reboot required
+    2 - PWM (4)
+
+Reboot required.
 
 Inverts the spindle on, counterclockwise and PWM signals (active low).
 
@@ -111,7 +115,6 @@ $17: Pullup disable control pins as bitfield:
     0 - Reset (1)
     1 - Feed hold (2)
     2 - Cycle start (4)
-    6 - EStop (64)
 
 Disable the control signals pullup resistors. Potentially enables pulldown resistor if available.
 NOTE: Block delete, Optional stop and EStop are optional signals, availability is driver dependent.
@@ -128,9 +131,13 @@ $20: Soft limits enable as boolean
 
 Enables soft limits checks within machine travel and sets alarm when exceeded. Requires homing.
 
+*** Enabled
+
 $21: Hard limits enable as bitfield where setting bit 0 enables the rest:
     0 - Enable (1)
     1 - Strict mode (2)
+
+*** Strict mode
 
 When enabled immediately halts motion and throws an alarm when a limit switch is triggered. In strict mode only homing is possible when a switch is engaged.
 
@@ -158,6 +165,8 @@ $23: Homing direction invert as axismask
 
 Homing searches for a switch in the positive direction. Set axis bit to search in negative direction.
 
+*** 1+2 (invert X and Y)
+
 $24: Homing locate feed rate in mm/min
 
 Feed rate to slowly engage limit switch to determine its location accurately.
@@ -165,6 +174,8 @@ Feed rate to slowly engage limit switch to determine its location accurately.
 $25: Homing search seek rate in mm/min
 
 Seek rate to quickly find the limit switch before the slower locating phase.
+
+*** 1000
 
 $26: Homing switch debounce delay in milliseconds
 
@@ -302,25 +313,25 @@ $112: Z-axis maximum rate in mm/min
 
 Maximum rate. Used as G0 rapid rate.
 
-*** TODO
+*** 1000
 
 $120: X-axis acceleration in mm/sec^2
 
 Acceleration. Used for motion planning to not exceed motor torque and lose steps.
 
-*** TODO
+*** 50
 
 $121: Y-axis acceleration in mm/sec^2
 
 Acceleration. Used for motion planning to not exceed motor torque and lose steps.
 
-*** TODO
+*** 50
 
 $122: Z-axis acceleration in mm/sec^2
 
 Acceleration. Used for motion planning to not exceed motor torque and lose steps.
 
-*** TODO
+*** 10
 
 $130: X-axis maximum travel in mm
 
@@ -377,6 +388,11 @@ $346: Restore position after M6 as boolean
 
 When set the spindle is moved so that the controlled point (tool tip) is the same as before the M6 command, if not the spindle is only moved to the Z home position.
 
+$370: Invert I/O Port inputs as bitfield:
+    0 - Aux 0 (1)
+
+Invert IOPort inputs.
+
 $384: Disable G92 persistence as boolean
 
 Disables save/restore of G92 offset to non-volatile storage (NVS).
@@ -393,10 +409,6 @@ Interval the real time report will be sent, set to 0 to disable.
 
 NOTE: A hard reset of the controller is required after changing this setting.
 
-$484: Unlock required after E-Stop as boolean
-
-If set unlock (by sending $X) is required after resetting a cleared E-Stop condition.
-
 $486: Lock coordinate systems as bitfield:
     0 - G59.1 (1)
     1 - G59.2 (2)
@@ -410,18 +422,19 @@ Changed
 
 $0=5
 $1=?
-$3=1
+$3=2
 $4=7
 $5=7
 $6=?
 $9=3
 $10=511
 $14=70
-$20=
-$21=1
+$20=1
+$21=3
 $22=15
+$23=3
 $24=?
-$25=?
+$25=1000
 $27=3
 $30=24000
 $31=15000
