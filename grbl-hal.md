@@ -13,6 +13,8 @@ $1: Step idle delay in milliseconds, max: 65535
 
 Sets a short hold delay when stopping to let dynamics settle before disabling steppers. Value 255 keeps motors enabled.
 
+*** 255
+
 $2: Step pulse invert as axismask
 
 Inverts the step signals (active low).
@@ -40,8 +42,6 @@ Inverts the axis limit input signals.
 $6: Invert probe pin as boolean
 
 Inverts the probe input pin signal.
-
-*** TODO
 
 $9: PWM Spindle as bitfield where setting bit 0 enables the rest:
     0 - Enable (1)
@@ -421,11 +421,10 @@ Changed
 =======
 
 $0=5
-$1=?
+$1=255
 $3=2
 $4=7
 $5=7
-$6=?
 $9=3
 $10=511
 $14=70
@@ -433,7 +432,6 @@ $20=1
 $21=3
 $22=15
 $23=3
-$24=?
 $25=1000
 $27=3
 $30=24000
