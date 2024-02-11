@@ -6,4 +6,7 @@
   (lib (name "Diode_SMD_AKL")(type "KiCad")(uri "${KIPRJMOD}/pretty/Diode_SMD_AKL.pretty")(options "")(descr ""))
   (lib (name "Capacitor_SMD_AKL")(type "KiCad")(uri "${KIPRJMOD}/pretty/Capacitor_SMD_AKL.pretty")(options "")(descr ""))
   (lib (name "Connector_JST")(type "KiCad")(uri "${KIPRJMOD}/pretty/Connector_JST.pretty")(options "")(descr ""))
+  (lib (name "w_relay")(type "KiCad")(uri "${KIPRJMOD}/pretty/w_relay.pretty")(options "")(descr ""))
+  (lib (name "Package_SO_AKL")(type "KiCad")(uri "${KIPRJMOD}/pretty/Package_SO_AKL.pretty")(options "")(descr ""))
+  (lib (name "MountingHole")(type "KiCad")(uri "${KIPRJMOD}/pretty/MountingHole.pretty")(options "")(descr ""))
 )
