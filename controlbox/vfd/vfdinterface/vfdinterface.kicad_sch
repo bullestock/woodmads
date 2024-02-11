@@ -3252,7 +3252,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "02a2ad36-c435-4964-9d40-1802e3a00af2")
-		(property "Reference" "Q2"
+		(property "Reference" "Q1"
 			(at 136.525 77.4699 0)
 			(effects
 				(font
@@ -3309,7 +3309,7 @@
 		(instances
 			(project "vfdinterface"
 				(path "/b81aded0-bd17-4345-984b-f1ee8de72aca"
-					(reference "Q2")
+					(reference "Q1")
 					(unit 1)
 				)
 			)
