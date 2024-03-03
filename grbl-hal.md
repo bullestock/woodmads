@@ -295,7 +295,9 @@ $102: Z-axis travel resolution in step/mm
 
 Travel resolution in steps per millimeter.
 
-*** 508 @ 2000 pulses/rev
+*** 500 @ 2000 pulses/rev
+
+*** Original SW: 800
 
 $110: X-axis maximum rate in mm/min
 
