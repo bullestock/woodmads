@@ -1,7 +1,7 @@
 (kicad_sch
 	(version 20231120)
 	(generator "eeschema")
-	(generator_version "7.99")
+	(generator_version "8.99")
 	(uuid "b81aded0-bd17-4345-984b-f1ee8de72aca")
 	(paper "A4")
 	(lib_symbols
@@ -2510,6 +2510,12 @@
 		(uuid "8260316f-d281-4ae6-9515-009ec2465318")
 	)
 	(junction
+		(at 116.84 111.76)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9458227e-9964-4c4d-bca6-ad702ff40757")
+	)
+	(junction
 		(at 88.9 66.04)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2749,16 +2755,6 @@
 	)
 	(wire
 		(pts
-			(xy 116.84 111.76) (xy 134.62 111.76)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "561dca66-3c4c-4d56-bdc8-2be45b01e611")
-	)
-	(wire
-		(pts
 			(xy 124.46 53.34) (xy 132.08 53.34)
 		)
 		(stroke
@@ -2849,6 +2845,26 @@
 	)
 	(wire
 		(pts
+			(xy 129.54 111.76) (xy 134.62 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7edf913a-95aa-4af2-a51e-1a0ae8c17c22")
+	)
+	(wire
+		(pts
+			(xy 101.6 114.3) (xy 101.6 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7ffb9cfa-7194-4b00-a1d4-e4105311f3ec")
+	)
+	(wire
+		(pts
 			(xy 149.86 49.53) (xy 149.86 53.34)
 		)
 		(stroke
@@ -2856,6 +2872,16 @@
 			(type default)
 		)
 		(uuid "844f25e4-7b60-4948-8fe7-f2e35a4d1da5")
+	)
+	(wire
+		(pts
+			(xy 116.84 111.76) (xy 121.92 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "85f775a6-2809-413a-b314-7cb2bb1d7928")
 	)
 	(wire
 		(pts
@@ -2926,6 +2952,16 @@
 			(type default)
 		)
 		(uuid "a49d07ef-9133-4b17-8d67-504af8db7edd")
+	)
+	(wire
+		(pts
+			(xy 111.76 111.76) (xy 116.84 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a6e5c1f6-c7af-4153-b9f0-52ca5d4597bd")
 	)
 	(wire
 		(pts
@@ -3086,6 +3122,16 @@
 			(type default)
 		)
 		(uuid "e83f5495-cff0-4a84-8a0e-4f45dc1bf5b1")
+	)
+	(wire
+		(pts
+			(xy 101.6 111.76) (xy 104.14 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ed0ef0fb-d7db-4cc1-a477-7493d910c594")
 	)
 	(wire
 		(pts
@@ -4079,16 +4125,82 @@
 	)
 	(symbol
 		(lib_id "Resistor_AKL:R_0603")
+		(at 107.95 111.76 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "87757933-c249-4b35-b0d1-be596be9cdfa")
+		(property "Reference" "R5"
+			(at 106.426 109.22 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "22k"
+			(at 107.696 111.76 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD_AKL:R_0603_1608Metric"
+			(at 119.38 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 107.95 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "SMD 0603 Chip Resistor, European Symbol, Alternate KiCad Library"
+			(at 107.95 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "ca012b76-e498-4b12-8d6b-9953c9058277")
+		)
+		(pin "1"
+			(uuid "09a9d4b5-21d5-40ad-85b6-b5cdb3915054")
+		)
+		(instances
+			(project "vfdinterface"
+				(path "/b81aded0-bd17-4345-984b-f1ee8de72aca"
+					(reference "R5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Resistor_AKL:R_0603")
 		(at 102.87 129.54 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "a384c9fc-1f2f-479f-8cab-0eeee5dff139")
 		(property "Reference" "R3"
-			(at 102.87 123.19 90)
+			(at 101.346 127.254 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4096,7 +4208,7 @@
 			)
 		)
 		(property "Value" "100k"
-			(at 102.87 125.73 90)
+			(at 102.87 129.54 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4280,6 +4392,139 @@
 			(project "vfdinterface"
 				(path "/b81aded0-bd17-4345-984b-f1ee8de72aca"
 					(reference "R1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Resistor_AKL:R_0603")
+		(at 125.73 111.76 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "c3316071-8912-415e-a048-4afc50eeb9f2")
+		(property "Reference" "R4"
+			(at 124.206 109.474 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "51k"
+			(at 125.73 111.76 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD_AKL:R_0603_1608Metric"
+			(at 137.16 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 125.73 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "SMD 0603 Chip Resistor, European Symbol, Alternate KiCad Library"
+			(at 125.73 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "cb97eca4-800a-4911-8d64-4423d337af6a")
+		)
+		(pin "1"
+			(uuid "a87a75d2-de2b-472b-a68b-861ad19a1a87")
+		)
+		(instances
+			(project "vfdinterface"
+				(path "/b81aded0-bd17-4345-984b-f1ee8de72aca"
+					(reference "R4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 101.6 114.3 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "caaa1c98-d9fe-4b07-8fbf-0a403c6fba27")
+		(property "Reference" "#PWR07"
+			(at 101.6 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 101.6 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 101.6 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 101.6 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 101.6 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c32f0e18-86e0-4cd8-89f6-dd465e8eb5dd")
+		)
+		(instances
+			(project "vfdinterface"
+				(path "/b81aded0-bd17-4345-984b-f1ee8de72aca"
+					(reference "#PWR07")
 					(unit 1)
 				)
 			)
