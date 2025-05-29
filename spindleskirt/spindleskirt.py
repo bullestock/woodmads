@@ -3,18 +3,18 @@ from ocp_vscode import *
 import math
 
 outer_dia = 78
-inner_dia = 65
+inner_dia = 65.8
 gap = 1
 slot_radius = (outer_dia + inner_dia)/4
 slot_width = 1.5
 slot_degrees = 300
-thickness = 10
-slot_height = thickness - 2
+thickness = 25
+slot_height = 10#thickness - 2
 
 # slot
 slot = Cylinder(slot_radius + slot_width/2, slot_height)             
 slot -= Cylinder(slot_radius - slot_width/2, slot_height)
-plane = Plane(slot.faces().sort_by(Axis.Z).first).offset(-1)
+plane = Plane(slot.faces().sort_by(Axis.Z).first).offset(3)
 slot = plane*slot
 
 # ring
@@ -40,4 +40,4 @@ for angle in range(0, 360, 2*STEP):
 
 show(p)
 
-export_step(p, 'spindleskirt.step')
+export_step(p, 'spindleskirt25.step')
