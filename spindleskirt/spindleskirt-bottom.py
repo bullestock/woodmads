@@ -3,16 +3,14 @@ from ocp_vscode import *
 import math
 from spindleskirt_defs import *
 
-gap = 1
 slot_radius = (outer_dia + inner_dia)/4
 slot_width = 1.5
 thickness = 12
-slot_height = 10
 
 # slot
-slot = Cylinder(slot_radius + slot_width/2, slot_height)             
-slot -= Cylinder(slot_radius - slot_width/2, slot_height)
-plane = Plane(slot.faces().sort_by(Axis.Z).first).offset(3)
+slot = Cylinder(slot_radius + slot_width/2, thickness)
+slot -= Cylinder(slot_radius - slot_width/2, thickness)
+plane = Plane(slot.faces().sort_by(Axis.Z).first).offset(-thickness/2 + magnet_h + 1)
 slot = plane*slot
 
 # ring
@@ -23,7 +21,6 @@ p -= Cylinder((inner_dia + gap)/2, thickness, mode=Mode.SUBTRACT)
 p -= slot
 
 # screw holes
-STEP = 45
 for angle in range(0, 360, STEP):
     p -= Pos(slot_radius*math.cos(math.radians(angle)),
              slot_radius*math.sin(math.radians(angle)),
@@ -33,7 +30,7 @@ for angle in range(0, 360, STEP):
 for angle in range(0, 360, STEP):
     p -= Pos(slot_radius*math.cos(math.radians(angle + STEP/2)),
              slot_radius*math.sin(math.radians(angle + STEP/2)),
-             thickness/2 - magnet_h) * Cylinder(radius=magnet_d/2, height=2*magnet_h)
+             thickness/2) * Cylinder(radius=magnet_d/2, height=2*magnet_h)
 
 show(p)
 

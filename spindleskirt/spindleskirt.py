@@ -40,4 +40,4 @@ for angle in range(0, 360, 2*STEP):
 
 show(p)
 
-export_step(p, 'spindleskirt25.step')
+export_step(p, 'spindleskirt.step')
