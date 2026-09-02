@@ -2,12 +2,12 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
-   width="319mm"
-   height="108mm"
-   viewBox="0 0 319 108"
+   width="225mm"
+   height="85mm"
+   viewBox="0 0 225 85"
    version="1.1"
    id="svg1"
-   inkscape:version="1.4.2 (ebf0e940d0, 2025-05-08)"
+   inkscape:version="1.4.4 (dcaf3e7d9e, 2026-05-05)"
    sodipodi:docname="frontpanel.svg"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
@@ -23,11 +23,11 @@
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="mm"
-     inkscape:zoom="1.9899648"
-     inkscape:cx="602.77448"
-     inkscape:cy="204.27497"
+     inkscape:zoom="1.595669"
+     inkscape:cx="475.03587"
+     inkscape:cy="160.43428"
      inkscape:window-width="2560"
-     inkscape:window-height="1382"
+     inkscape:window-height="1369"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
@@ -38,54 +38,50 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1">
-    <g
-       id="g4"
-       transform="translate(-20)">
-      <rect
-         style="fill:none;fill-opacity:0.246227;stroke:#000000;stroke-width:0.499998;stroke-linejoin:round"
-         id="rect1"
-         width="319"
-         height="108"
-         x="0"
-         y="0" />
-      <circle
-         style="fill:none;fill-opacity:0.246227;stroke:#000000;stroke-width:0.499999;stroke-linejoin:round"
-         id="path1"
-         cx="40"
-         cy="54"
-         r="11" />
-      <circle
-         style="fill:none;fill-opacity:0.246227;stroke:#000000;stroke-width:0.499999;stroke-linejoin:round"
-         id="circle1"
-         cx="90"
-         cy="54"
-         r="11" />
-      <circle
-         style="fill:none;fill-opacity:0.246227;stroke:#000000;stroke-width:0.499999;stroke-linejoin:round"
-         id="circle2"
-         cx="280"
-         cy="54"
-         r="11" />
-      <circle
-         style="fill:none;fill-opacity:0.246227;stroke:#000000;stroke-width:0.499999;stroke-linejoin:round"
-         id="circle3"
-         cx="140"
-         cy="54"
-         r="11" />
-      <rect
-         style="fill:none;fill-opacity:0.246227;stroke:#000000;stroke-width:0.499997;stroke-linejoin:round"
-         id="rect3"
-         width="50"
-         height="20"
-         x="185"
-         y="24" />
-      <rect
-         style="fill:none;fill-opacity:0.246227;stroke:#000000;stroke-width:0.499997;stroke-linejoin:round"
-         id="rect4"
-         width="50"
-         height="20"
-         x="185"
-         y="64" />
-    </g>
+    <rect
+       style="fill:none;fill-opacity:0.246227;stroke:#000000;stroke-width:0.499998;stroke-linejoin:round"
+       id="rect1"
+       width="225"
+       height="85"
+       x="3.5527137e-15"
+       y="0" />
+    <circle
+       style="fill:none;fill-opacity:0.246227;stroke:#000000;stroke-width:0.499999;stroke-linejoin:round"
+       id="circle2"
+       cx="130"
+       cy="42.5"
+       r="11" />
+    <rect
+       style="fill:none;fill-opacity:0.246227;stroke:#000000;stroke-width:0.499997;stroke-linejoin:round"
+       id="rect4"
+       width="50"
+       height="20"
+       x="157.5"
+       y="52.5" />
+    <rect
+       style="fill:none;fill-opacity:0.246227;stroke:#000000;stroke-width:0.499997;stroke-linejoin:round"
+       id="rect3"
+       width="50"
+       height="20"
+       x="157.5"
+       y="12.5" />
+    <circle
+       style="fill:none;fill-opacity:0.246227;stroke:#000000;stroke-width:0.499999;stroke-linejoin:round"
+       id="path1"
+       cx="20"
+       cy="42.5"
+       r="11" />
+    <circle
+       style="fill:none;fill-opacity:0.246227;stroke:#000000;stroke-width:0.499999;stroke-linejoin:round"
+       id="circle1"
+       cx="55"
+       cy="42.5"
+       r="11" />
+    <circle
+       style="fill:none;fill-opacity:0.246227;stroke:#000000;stroke-width:0.499999;stroke-linejoin:round"
+       id="circle3"
+       cx="90"
+       cy="42.5"
+       r="11" />
   </g>
 </svg>
