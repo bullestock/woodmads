@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.4.4 (dcaf3e7d9e, 2026-05-05)"
+   sodipodi:docname="mountplate.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:zoom="2.6769608"
+     inkscape:cx="170.15565"
+     inkscape:cy="207.69822"
+     inkscape:window-width="2560"
+     inkscape:window-height="1369"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="fill:none;stroke:#000000;stroke-width:0.499999;stroke-linejoin:round;stroke-opacity:1"
+       id="rect1"
+       width="90"
+       height="110"
+       x="0"
+       y="0"
+       rx="2"
+       ry="2" />
+    <g
+       id="g3"
+       transform="translate(3.7999985,6.4000008)">
+      <circle
+         style="fill:none;stroke:#000000;stroke-width:0.499999;stroke-linejoin:round;stroke-opacity:1"
+         id="path1"
+         cx="1.6"
+         cy="1.6"
+         r="1.9200001" />
+      <circle
+         style="fill:none;stroke:#000000;stroke-width:0.499999;stroke-linejoin:round;stroke-opacity:1"
+         id="circle1"
+         cx="80.800003"
+         cy="1.6"
+         r="1.9200001" />
+      <circle
+         style="fill:none;stroke:#000000;stroke-width:0.499999;stroke-linejoin:round;stroke-opacity:1"
+         id="circle2"
+         cx="80.800003"
+         cy="45.599998"
+         r="1.9200001" />
+      <circle
+         style="fill:none;stroke:#000000;stroke-width:0.499999;stroke-linejoin:round;stroke-opacity:1"
+         id="circle3"
+         cx="1.6"
+         cy="45.599998"
+         r="1.9200001" />
+    </g>
+    <circle
+       style="fill:none;stroke:#000000;stroke-width:0.499999;stroke-linejoin:round;stroke-opacity:1"
+       id="path3"
+       cx="12"
+       cy="7"
+       r="1.25" />
+    <circle
+       style="fill:none;stroke:#000000;stroke-width:0.499999;stroke-linejoin:round;stroke-opacity:1"
+       id="circle4"
+       cx="78"
+       cy="7"
+       r="1.25" />
+    <circle
+       style="fill:none;stroke:#000000;stroke-width:0.499999;stroke-linejoin:round;stroke-opacity:1"
+       id="circle5"
+       cx="78"
+       cy="53"
+       r="1.25" />
+    <circle
+       style="fill:none;stroke:#000000;stroke-width:0.499999;stroke-linejoin:round;stroke-opacity:1"
+       id="circle6"
+       cx="12"
+       cy="53"
+       r="1.25" />
+    <g
+       id="g10"
+       transform="translate(15.75,64.091668)">
+      <circle
+         style="fill:none;stroke:#000000;stroke-width:0.499999;stroke-linejoin:round;stroke-opacity:1"
+         id="circle7"
+         cx="1.25"
+         cy="1.25"
+         r="1.25" />
+      <circle
+         style="fill:none;stroke:#000000;stroke-width:0.499999;stroke-linejoin:round;stroke-opacity:1"
+         id="circle8"
+         cx="57.25"
+         cy="1.25"
+         r="1.25" />
+      <circle
+         style="fill:none;stroke:#000000;stroke-width:0.499999;stroke-linejoin:round;stroke-opacity:1"
+         id="circle9"
+         cx="57.25"
+         cy="37.25"
+         r="1.25" />
+      <circle
+         style="fill:none;stroke:#000000;stroke-width:0.499999;stroke-linejoin:round;stroke-opacity:1"
+         id="circle10"
+         cx="1.25"
+         cy="37.25"
+         r="1.25" />
+    </g>
+  </g>
+</svg>
